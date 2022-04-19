@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    
+      Author: Camilo Yanten
+      Date:   2022-03-13
+
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+   <title>Red Ball Survey</title>
+   <link href="css/stylesheet.css" rel="stylesheet" />
+</head>
+
+<h1>Lecture 7 Lab: Web Form</h1>
+      <p>Fields with * are required</p>
+
+      
+      <section>
+       <form id="survey" action="s https://formspree.io/" method="post">
+         <fieldset id="personalInfo">
+            <legend>Your Personal Information</legend>
+            
+            <div class="formRow">
+               <label for="name">Full Name*</label>
+               <input name="fullName" id="name" type="text" placeholder="first and last name" required />
+            </div>
+
+            <div class="formRow">
+               <label for="mail">E-mail*</label>
+               <input name="studentEmail" id="mail" type="email" placeholder="someone@somewhere.com" required />
+            </div>
+
+            <div class="formRow">
+               <label for="study">Current Study</label>
+               <input name="currentStudy" id="study" type="text" value="Douglas College" />
+            </div>
+
+            <div class="formRow">
+               <label for="ageSpin">Age</label>
+               <input name="studentAge" id="ageSpin" type="number"
+                      value="20" step="1" min="18" max="120" />
+            </div>
+         </fieldset>
+
+         <fieldset id="quiz">
+            <legend>Your Quiz</legend>
+            <div class="formRow">
+               <label for="question1">1. What is the result of the following equation?
+            </div>
+
+            <div class="formRow">
+               <label for="question1">2²x5=&nbsp;</label>
+               <input name="question1Douglas" id="question1" type="text"/>
+            </div>
+            <br>
+            <div class="formRow">
+               <label for="question2">2. What does the acronym W3C stand for?&nbsp;</label>
+               <select name="question2Douglas" id="question=2">
+                  <option value="order1">3rd World War Coalition</option>
+                  <option value="order2" selected>World Wide WarCraft</option>
+                  <option value="order3">World Wide Web Consortium</option>
+                  <option value="order4">I'm afraid to answer it</option>
+               </select>
+            </div> 
+            <br>
+            <div class="formRow">
+               <label for="question3">3. CSS is an abbreviation of&nbsp;</label>
+               <input name="question1Douglas" id="question3" type="text"/>&nbsp;style sheet
+            </div>
+            <br>
+            <div class="formRow">
+               <label for="question4">4. Seklect all the (scripting) languages we learn in CSIS 1280?
+            </div>
+            <div class="formRow">
+               <input type="checkbox" name="question4Douglas" value="HTML">HTML&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="question4Douglas" value="CSS">CSS&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="question4Douglas" value="JavaScript">JavaScript&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="question4Douglas" value="PHP">PHP&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="question4Douglas" value="C#">C#&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="question4Douglas" value="Java">Java&nbsp;&nbsp;&nbsp;
+            </div>
+            <br>
+            <div class="formRow">
+               <label>5. Consider the picture of a DOM structure below. Which of the following selector <strong>CANNOT</strong> be used to select all the &lt;p&gt; elements</label>
+            </div>
+            <div class="formRow2"> 
+               <div>
+                  <input name="oCorrect5" id="cP" value="p" type="radio" />
+                  <label for="cP">p</label><br>
+                  <input name="oCorrect5" id="cH1" value="h1 ~ p" type="radio" />
+                  <label for="cH1">h1 ~ p</label><br>
+                  <input name="oCorrect5" id="cAp" value="article p" type="radio" />
+                  <label for="cAp">article p</label><br>
+                  <input name="oCorrect5" id="cArt" value="article > p" type="radio" />
+                  <label for="cArt">article > p</label><br>
+                  <input name="oCorrect5" id="cHp" value="h1 + p" type="radio" />
+                  <label for="ch1">h1 + p</label>
+               </div>
+               <div>
+                  <img src="images/q5.PNG" alt="question5">
+               </div>
+            </div>
+            <br>
+            <div class="formRow">
+               <label>6. Consider the picture of a DOM structure below. Which of the following selector <strong>CAN</strong> be used to select all the identified &lt;li&gt; elements</label>
+            </div>
+            <div class="formRow3"> 
+               <div>
+                  <input name="oCorrect6" id="cL" value="li" type="radio" />
+                  <label for="cL">li</label><br>
+                  <input name="oCorrect6" id="cLin" value="li:nth-child(2n+1)" type="radio" />
+                  <label for="cLin">li:nth-child(2n+1)</label><br>
+                  <input name="oCorrect6" id="cUli2" value="ul > li:(2n+1)" type="radio" />
+                  <label for="cUli2">ul > li:(2n+1)</label><br>
+                  <input name="oCorrect6" id="cUli" value="ul > li" type="radio" />
+                  <label for="cUli">ul > li</label><br>
+                  <input name="oCorrect6" id="cUli3" value="ul > li(2n+1)" type="radio" />
+                  <label for="cUli3">ul > li(2n+1)</label>
+               </div>
+               <div>
+                  <img src="images/q6.PNG" alt="question6">
+               </div>
+            <br>
+            <div class="formRow">
+               <label for="commBox">7. Douglas College and the Coquitlam campus was named after the former Governor and Liutenant-Governor of British Columbia. What are their names?</label>
+               <textarea name="question7" id="commBox"></textarea>            
+            </div>
+         </fieldset>
+
+         <div id="buttons">
+            <input type="submit" value="Submit My Quiz" />
+            <input type="reset" value="Cancel" />
+         </div>
+      </form>
+   </section>

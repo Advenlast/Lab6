@@ -1,0 +1,118 @@
+/*
+
+   Forms Style Sheet
+   Author: Camilo Yanten
+   Date:   2022-03-13  
+
+*/
+
+/* HTML and Body styles */
+
+html {
+    background: rgb(150, 169, 190);
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+ }
+ 
+ body {
+    background-color: rgb(226, 238, 237);
+    box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+                inset rgb(51, 21, 21) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;  
+    margin: 0px auto;
+    padding: 10px;
+    min-width: 320px;
+    max-width: 1020px;  
+    width: 100%;
+ }
+
+ p {
+    color: rgb(179, 20, 25);
+    font-weight: bold;
+ }
+
+/* Form Layout Styles */
+
+form#survey {
+    display: flex;
+    flex-flow: column wrap;
+ }
+ 
+ form#survey > fieldset#personalInfo {
+    background-color: rgb(195, 241, 181);
+    border-radius: 20px;
+    flex: 1 1 75px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+ }
+ 
+ form#survey > fieldset#quiz {
+   background-color: rgb(195, 241, 181);
+   border-radius: 20px;
+   flex: 1 1 500px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
+
+ 
+ div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+ }
+ 
+ fieldset#personalInfo > div.formRow > * {
+    flex: 1 1 75px;
+ }
+ 
+ 
+ /* Legend Styles */
+ 
+ legend {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    padding: 5px;
+ }
+ 
+ /* Text Area Styles */
+ 
+ textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+ }
+ 
+ /* Spinner Styles */
+ 
+ div.formRow > input#dineSpin {
+    flex: 0 0 50px;
+ }
+ 
+ /* Form Button Styles */
+ 
+ div#buttons {
+    text-align: center;
+    width: 100%;
+ }
+/* Images Styles */
+
+div.formRow2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+    justify-content: space-between;
+    padding-right: 400px;
+}
+
+div.formRow3 {
+   display: flex;
+   flex-flow: row wrap;
+   margin: 7px 0px;
+   justify-content: space-between;
+   padding-right: 280px;
+}
